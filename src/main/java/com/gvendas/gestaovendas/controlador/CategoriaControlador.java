@@ -69,5 +69,5 @@ public class CategoriaControlador {
 	@PutMapping("/{codigo}")
 	public ResponseEntity<CategoriaResponseDTO> atualizar(@PathVariable Long codigo, @Valid @RequestBody CategoriaRequestDTO categoriaDTO) {
 		return ResponseEntity.ok(CategoriaResponseDTO.converterParaCategoriaDTO(categoriaServico.atualizar(codigo, categoriaDTO.converterParaEntidade(codigo))));
-	}
 }
+ /****  teste ****/
